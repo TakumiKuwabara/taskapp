@@ -115,18 +115,32 @@
                                 </constraints>
                                 <locale key="locale" localeIdentifier="ja"/>
                             </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mqw-N1-JxB">
+                                <rect key="frame" x="10" y="495" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カテゴリー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDG-pu-Kz9">
+                                <rect key="frame" x="10" y="464" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oVk-hR-KiX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Fte-Hy-qx5" secondAttribute="trailing" id="4PG-ee-PPu"/>
+                            <constraint firstItem="Mqw-N1-JxB" firstAttribute="leading" secondItem="oVk-hR-KiX" secondAttribute="leading" constant="10" id="6lV-p2-bcK"/>
                             <constraint firstItem="pNv-96-ylP" firstAttribute="leading" secondItem="oVk-hR-KiX" secondAttribute="leading" constant="10" id="6zT-bd-7aX"/>
                             <constraint firstItem="S0v-0m-IJo" firstAttribute="leading" secondItem="oVk-hR-KiX" secondAttribute="leading" constant="10" id="8RZ-uf-fvh"/>
                             <constraint firstItem="VN4-oK-kdE" firstAttribute="leading" secondItem="oVk-hR-KiX" secondAttribute="leading" constant="10" id="AkU-Gf-WTF"/>
                             <constraint firstItem="oVk-hR-KiX" firstAttribute="trailing" secondItem="VN4-oK-kdE" secondAttribute="trailing" constant="10" id="Ecx-C4-jax"/>
+                            <constraint firstItem="Mqw-N1-JxB" firstAttribute="top" secondItem="fDG-pu-Kz9" secondAttribute="bottom" constant="10" id="EjQ-P2-KEu"/>
                             <constraint firstItem="VN4-oK-kdE" firstAttribute="top" secondItem="I8D-Pr-JPT" secondAttribute="bottom" constant="10" id="Jjd-ir-LFh"/>
                             <constraint firstItem="S0v-0m-IJo" firstAttribute="top" secondItem="VN4-oK-kdE" secondAttribute="bottom" constant="10" id="Jot-42-hRt"/>
                             <constraint firstItem="oVk-hR-KiX" firstAttribute="trailing" secondItem="pNv-96-ylP" secondAttribute="trailing" constant="10" id="JuM-ey-MmY"/>
+                            <constraint firstItem="oVk-hR-KiX" firstAttribute="trailing" secondItem="Mqw-N1-JxB" secondAttribute="trailing" constant="10" id="Pqm-nC-BzB"/>
                             <constraint firstItem="VN4-oK-kdE" firstAttribute="leading" secondItem="oVk-hR-KiX" secondAttribute="leading" constant="10" id="QlH-Nj-Wha"/>
                             <constraint firstItem="oVk-hR-KiX" firstAttribute="trailing" secondItem="S0v-0m-IJo" secondAttribute="trailing" constant="10" id="Sv7-G6-g3E"/>
                             <constraint firstItem="VN4-oK-kdE" firstAttribute="top" secondItem="I8D-Pr-JPT" secondAttribute="bottom" constant="10" id="efM-EQ-EHP"/>
@@ -134,12 +148,16 @@
                             <constraint firstItem="I8D-Pr-JPT" firstAttribute="top" secondItem="oVk-hR-KiX" secondAttribute="top" constant="10" id="hBg-U9-ebc"/>
                             <constraint firstItem="Fte-Hy-qx5" firstAttribute="leading" secondItem="oVk-hR-KiX" secondAttribute="leading" id="ih9-PX-2zK"/>
                             <constraint firstItem="I8D-Pr-JPT" firstAttribute="leading" secondItem="oVk-hR-KiX" secondAttribute="leading" constant="10" id="phF-Wo-r2q"/>
+                            <constraint firstItem="fDG-pu-Kz9" firstAttribute="leading" secondItem="oVk-hR-KiX" secondAttribute="leading" constant="10" id="qKK-Ze-tIc"/>
+                            <constraint firstItem="oVk-hR-KiX" firstAttribute="trailing" secondItem="fDG-pu-Kz9" secondAttribute="trailing" constant="10" id="rEI-6j-EPX"/>
+                            <constraint firstItem="fDG-pu-Kz9" firstAttribute="top" secondItem="Fte-Hy-qx5" secondAttribute="bottom" constant="10" id="sh8-C3-fEq"/>
                             <constraint firstItem="pNv-96-ylP" firstAttribute="top" secondItem="S0v-0m-IJo" secondAttribute="bottom" constant="10" id="xMm-Vf-LOb"/>
                             <constraint firstItem="oVk-hR-KiX" firstAttribute="trailing" secondItem="I8D-Pr-JPT" secondAttribute="trailing" constant="10" id="yxJ-ES-DGc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5WX-Jk-TeQ"/>
                     <connections>
+                        <outlet property="category" destination="Mqw-N1-JxB" id="SJ6-W9-gUw"/>
                         <outlet property="contentsTextView" destination="pNv-96-ylP" id="3BR-Jm-MGi"/>
                         <outlet property="datePicker" destination="Fte-Hy-qx5" id="dQs-Ns-3ey"/>
                         <outlet property="titleTextField" destination="VN4-oK-kdE" id="1Aq-6J-2Zi"/>
